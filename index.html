@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses | Emerson University Multan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <header class ="one">
         <h1>Emerson University Multan</h1>
 
-        <nav>
+        <nav class="navigation">
             <a href="index.html">Home</a> |
             <a href="courses.html">Courses</a> |
             <a href="departments.html">Departments</a> |
             <a href="contact.html">Contact</a>
         </nav>
-        <hr>
     </header>
 
-    <main>
+            <hr>
+         
+        <div class="search-box">
+        <label for="search">Search</label>
+        <input type="text" placeholder="Search Courses...">
+        </div>
+
+    <main class="content">
+
+        
 
         <section>
             <h2>Courses</h2>
@@ -31,13 +40,13 @@
 
             <h2>Available Courses</h2>
 
-            <ul>
+            <ol type="1">
                 <li>Bachelor of Science in Computer Science</li>
                 <li>Bachelor of Business Administration</li>
                 <li>Bachelor of Arts in English Literature</li>
                 <li>Bachelor of Engineering in Electrical Engineering</li>
                 <li>Bachelor of Science in Psychology</li>
-            </ul>
+            </ol>
 
         </section>
 
@@ -55,47 +64,47 @@
 
                 <li>
                     <strong>Bachelor of Science in Computer Science</strong>
-                    <ul>
+                    <ol type="1">
                         <li>Prof. Ali Khan</li>
                         <li>Dr. Sarah Ahmed</li>
                         <li>Mr. Hassan Raza</li>
-                    </ul>
+                    </ol>
                 </li>
 
                 <li>
                     <strong>Bachelor of Business Administration</strong>
-                    <ul>
+                    <ol type="1">
                         <li>Prof. Ayesha Malik</li>
                         <li>Dr. Usman Siddiqui</li>
                         <li>Ms. Hina Shah</li>
-                    </ul>
+                    </ol>
                 </li>
 
                 <li>
                     <strong>Bachelor of Arts in English Literature</strong>
-                    <ul>
+                    <ol type="1">
                         <li>Dr. Maria</li>
                         <li>Prof. Ahmed Farooq</li>
                         <li>Ms. Sana Iqbal</li>
-                    </ul>
+                    </ol>
                 </li>
 
                 <li>
                     <strong>Bachelor of Engineering in Electrical Engineering</strong>
-                    <ul>
+                    <ol type="1">
                         <li>Dr. Imran Qureshi</li>
                         <li>Prof. Bilal Hussain</li>
                         <li>Mr. Kamran Ali</li>
-                    </ul>
+                    </ol>
                 </li>
 
                 <li>
                     <strong>Bachelor of Science in Psychology</strong>
-                    <ul>
+                    <ol type="1">
                         <li>Dr. Fatima Noor</li>
                         <li>Prof. Zainab Malik</li>
                         <li>Ms. Rabia Ahmed</li>
-                    </ul>
+                    </ol>
                 </li>
 
             </ul>
@@ -104,9 +113,9 @@
 
         <section>
 
-            <h2>University Programs and Teachers</h2>
+            <h2 class="mint">University Programs and Teachers</h2>
 
-            <table border="1">
+            <table border="1" class="table" >
 
                 <tr>
                     <th>S.No</th>
@@ -368,9 +377,10 @@
 
     </main>
 
-    <footer>
+    <hr>
+    <footer class="footer">
 
-        <hr>
+        
 
         <h3>Contact Information</h3>
 

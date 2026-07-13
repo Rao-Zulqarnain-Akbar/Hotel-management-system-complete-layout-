@@ -1,3 +1,67 @@
-.red{
-    background-color: rgb(241, 218, 187);
+.one {
+    background-color: rgb(245, 230, 211);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
 }
+
+.search-box {
+    text-align: right;
+    /* margin: 20px 0; */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h1{
+    margin:auto;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.navigation {
+    text-align: right;
+    margin: 20px 15px 10px 5px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    a:link {
+        color: rgb(0, 0, 0);
+    }
+
+    a:visited {
+        color: rgb(78, 16, 223);
+    }
+
+    a:hover {
+        color: rgb(231, 42, 42);
+    }
+
+    a:active {
+        color: rgb(100, 201, 79);
+    }
+}
+
+ .content {
+    margin: 10px 8px;
+    background-color: rgb(208, 231, 236);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+ }
+
+ .footer {
+    background-color: rgb(245, 230, 211);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+ }
+
+ .mint{
+    text-align: center;
+ }
+
+ .table{
+    margin: auto;
+    text-align: center;
+ }
