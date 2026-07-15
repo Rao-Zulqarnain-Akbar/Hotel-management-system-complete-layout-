@@ -5,6 +5,10 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+header h1 {
+    height: 200px;
+}
+
 .navbar{
     position:fixed;
     top:0;
@@ -15,7 +19,6 @@
     justify-content:space-between;
     align-items:center;
     padding:15px 50px;
-    /* z-index:1000; */
 }
 
 .nav-links{
@@ -28,7 +31,6 @@
     text-decoration:none;
     color:white;
     font-size:18px;
-    transition:0.3s;
 }
 
 .nav-links a:hover{
@@ -50,8 +52,8 @@
 }
 
 .hero{
-    height:100vh;
-    background:linear-gradient(to right,#38bdf8);
+    height:170vh;
+    background:#38bdf8;
     color:white;
     display:flex;
     flex-direction:column;
@@ -71,6 +73,6 @@
     padding: 25px;
     justify-content: center;
     text-align: center;
-
-
 }
+
+
