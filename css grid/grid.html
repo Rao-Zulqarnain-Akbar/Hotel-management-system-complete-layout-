@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: 100px 100px 1fr;
+      grid-template-rows: 100px 150px;
+      grid-template-areas: "a a a"
+                             "b c d"
+                             "b e f";
+      background-color: #aca9a9;
+      padding: 12px;
+      gap: 10px;
+    }
+
+    .a {
+      grid-area: a;
+      background-color: #913232;
+      border-radius: 11px;
+    }
+
+    .b {
+      grid-area: b;
+     background-color: #33e05e;
+           border-radius: 11px;
+
+    }
+
+    .c {
+      grid-area: c;
+     background-color: #e6a10f;
+           border-radius: 11px;
+
+    }
+
+    .d {
+      grid-area: d;
+    background-color: #552385;
+          border-radius: 11px;
+
+    }
+
+    .e {
+      grid-area: e;
+    background-color: #881859;
+          border-radius: 11px;
+
+    }
+
+    .f {
+      grid-area: f;
+   background-color: #f11f1f;
+         border-radius: 11px;
+    }
+
+   @media (max-width:430px){
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 50px 60px 40px 100px ;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e" "f";
+    }
+
+}
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <div class="d">D</div>
+    <div class="e">E</div>
+    <div class="f">F</div>
+  </div>
+</body>
+</html>
