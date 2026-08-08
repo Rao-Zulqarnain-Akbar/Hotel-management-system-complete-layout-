@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">this is a para but not a short or unchanged</p>
+    <p id="para">this is another para</p>
+    <p id="para">this is third para</p>
+    <p id="para">this is forth para</p>
+
+    <button onclick="changepara()">Change Para</button>
+    <script>
+      function changepara() {
+        let paras = document.querySelectorAll("#para")
+        paras.forEach(function (para) {
+            para.innerText= "This is a new para and it is large one and this is changed and having length approx double";  
+        })
+      } 
+    </script>
+</body>
+</html>
