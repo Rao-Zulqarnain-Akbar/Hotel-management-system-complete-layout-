@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Display on screen</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <button id="btn">Click me</button>
+    <h2 id="result"></h2>
+
+    <script>
+        document.querySelector("#btn").addEventListener("click", ()=>{
+            let name = document.querySelector("#name").value;
+            document.querySelector("#result").innerText = name;
+        })
+    </script>
+</body>
+</html>
