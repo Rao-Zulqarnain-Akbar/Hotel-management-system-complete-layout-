@@ -10,10 +10,19 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 addBtn.addEventListener("click", function () {
 
-    if (input.value === "") {
+   if (input.value.trim() === "") {
         return;
     }
 
+    let taskExists = tasks.some(function (item) {
+        return item.text === input.value.trim();
+    });
+
+    if (taskExists) {
+        alert("This task already exists");
+        return;
+    }
+    
     let task = document.createElement("div");
 
     task.classList.add("bg-white","p-3","rounded-lg","shadow","mb-3","flex","justify-between","items-start","gap-2","min-w-0");
@@ -21,7 +30,7 @@ addBtn.addEventListener("click", function () {
     let text = document.createElement("span");
 
     text.textContent = input.value;
-    text.classList.add("break-words","min-w-0","flex-1");
+     text.classList.add("break-words","min-w-0","flex-1");
 
 
     let deleteBtn = document.createElement("button");
